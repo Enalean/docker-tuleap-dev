@@ -1,0 +1,4 @@
+Development Image for Tuleap on RHEL/Centos 7
+=============================================
+
+Meant to be used as part of Tuleap development.
