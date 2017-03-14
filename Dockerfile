@@ -19,6 +19,7 @@ RUN yum install -y epel-release centos-release-scl vim && \
     rh-php56-php-fpm \
     rh-php56-php-ldap \
     rh-php56-php-pecl-xdebug \
+    sclo-php56-php-pecl-redis \
     php-ZendFramework2-Loader \
     php-paragonie-random-compat \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
