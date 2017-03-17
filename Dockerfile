@@ -3,7 +3,7 @@ FROM centos:7
 COPY Tuleap.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release centos-release-scl vim && \
-    yum install --enablerepo=Tuleap -y \
+    yum install --enablerepo=TuleapC6 -y \
     nginx \
     rh-php56-php-gd \
     rh-php56-php-pecl \
@@ -18,7 +18,7 @@ RUN yum install -y epel-release centos-release-scl vim && \
     rh-php56-php-pdo \
     rh-php56-php-fpm \
     rh-php56-php-ldap \
-    rh-php56-php-bcmath \
+    rh-php56-php-bcmath php-amqplib-amqplib \
     rh-php56-php-pecl-xdebug \
     php-ZendFramework2-Loader \
     php-paragonie-random-compat \
