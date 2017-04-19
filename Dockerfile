@@ -3,7 +3,7 @@ FROM centos:7
 COPY Tuleap.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release centos-release-scl vim && \
-    yum install --enablerepo=TuleapC6 -y \
+    yum install --enablerepo=TuleapC7 -y \
     nginx \
     rh-php56-php-gd \
     rh-php56-php-pecl \
@@ -21,8 +21,9 @@ RUN yum install -y epel-release centos-release-scl vim && \
     rh-php56-php-bcmath php-amqplib-amqplib \
     rh-php56-php-pecl-xdebug \
     php-ZendFramework2-Loader \
+    php-zendframework \
     php-paragonie-random-compat \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
-    httpd mod_dav_svn mod_perl perl-DBI perl-LDAP perl-DBD-MySQL \
+    httpd mod_dav_svn mod_perl perl-DBI perl-LDAP perl-DBD-MySQL logrotate sha1collisiondetector \
     supervisor; \
     yum clean all

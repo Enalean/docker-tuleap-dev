@@ -1,11 +1,5 @@
-[TuleapC6]
-name=TuleapC6
-baseurl=https://ci.tuleap.org/yum/tuleap/rhel/6/dev/$basearch
-enabled=0
-gpgcheck=0
-
 [TuleapC7]
 name=TuleapC7
 baseurl=https://ci.tuleap.org/yum/tuleap/rhel/7/dev/$basearch
-enabled=1
+enabled=0
 gpgcheck=0
