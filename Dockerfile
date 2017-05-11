@@ -18,6 +18,7 @@ RUN yum install -y epel-release centos-release-scl vim && \
     rh-php56-php-pdo \
     rh-php56-php-fpm \
     rh-php56-php-ldap \
+    rh-php56-php-intl \
     rh-php56-php-bcmath php-amqplib-amqplib \
     rh-php56-php-pecl-xdebug \
     php-ZendFramework2-Loader \
