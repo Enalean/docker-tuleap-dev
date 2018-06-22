@@ -24,9 +24,8 @@ RUN yum install -y epel-release centos-release-scl vim && \
     php-ZendFramework2-Loader \
     php-zendframework \
     php-paragonie-random-compat \
-    htmlpurifier \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
     httpd mod_dav_svn logrotate sha1collisiondetector \
-    mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' \
+    mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' 'perl(Redis)' \
     supervisor; \
     yum clean all
