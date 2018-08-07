@@ -24,8 +24,6 @@ RUN yum install -y epel-release centos-release-scl vim && \
     php56-php-bcmath php-amqplib-amqplib \
     php56-php-pecl-xdebug \
     php-ZendFramework2-Loader \
-    php-zendframework \
-    php-paragonie-random-compat \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
     httpd mod_dav_svn logrotate sha1collisiondetector \
     mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' 'perl(Redis)' \
