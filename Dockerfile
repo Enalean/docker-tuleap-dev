@@ -1,26 +1,28 @@
 FROM centos:7
 
+COPY remi-safe.repo /etc/yum.repos.d/
+COPY RPM-GPG-KEY-remi /etc/pki/rpm-gpg/
 COPY Tuleap.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release centos-release-scl vim && \
     yum install --enablerepo=TuleapC7 -y \
     nginx \
-    rh-php56-php-gd \
-    rh-php56-php-pecl \
-    rh-php56-php-pear \
-    rh-php56-php-soap \
-    rh-php56-php-mysqlnd \
-    rh-php56-php-xml \
-    rh-php56-php-mbstring \
-    rh-php56-php-cli \
-    rh-php56-php-opcache \
-    rh-php56-php-process \
-    rh-php56-php-pdo \
-    rh-php56-php-fpm \
-    rh-php56-php-ldap \
-    rh-php56-php-intl \
-    rh-php56-php-bcmath php-amqplib-amqplib \
-    rh-php56-php-pecl-xdebug \
+    php56-php-gd \
+    php56-php-pecl \
+    php56-php-pear \
+    php56-php-soap \
+    php56-php-mysqlnd \
+    php56-php-xml \
+    php56-php-mbstring \
+    php56-php-cli \
+    php56-php-opcache \
+    php56-php-process \
+    php56-php-pdo \
+    php56-php-fpm \
+    php56-php-ldap \
+    php56-php-intl \
+    php56-php-bcmath php-amqplib-amqplib \
+    php56-php-pecl-xdebug \
     php-ZendFramework2-Loader \
     php-zendframework \
     php-paragonie-random-compat \
@@ -28,4 +30,5 @@ RUN yum install -y epel-release centos-release-scl vim && \
     httpd mod_dav_svn logrotate sha1collisiondetector \
     mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' 'perl(Redis)' \
     supervisor; \
-    yum clean all
+    yum clean all && \
+    rm -rf /var/cache/yum
