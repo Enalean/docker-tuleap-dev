@@ -7,23 +7,22 @@ COPY Tuleap.repo /etc/yum.repos.d/
 RUN yum install -y epel-release centos-release-scl vim && \
     yum install --enablerepo=TuleapC7 -y \
     nginx \
-    php56-php-gd \
-    php56-php-pecl \
-    php56-php-pear \
-    php56-php-soap \
-    php56-php-mysqlnd \
-    php56-php-xml \
-    php56-php-mbstring \
-    php56-php-cli \
-    php56-php-opcache \
-    php56-php-process \
-    php56-php-pdo \
-    php56-php-fpm \
-    php56-php-ldap \
-    php56-php-intl \
-    php56-php-bcmath php-amqplib-amqplib \
-    php56-php-pecl-xdebug \
-    php-ZendFramework2-Loader \
+    php72-php-gd \
+    php72-php-pecl \
+    php72-php-pear \
+    php72-php-soap \
+    php72-php-mysqlnd \
+    php72-php-xml \
+    php72-php-mbstring \
+    php72-php-cli \
+    php72-php-opcache \
+    php72-php-process \
+    php72-php-pdo \
+    php72-php-fpm \
+    php72-php-ldap \
+    php72-php-intl \
+    php72-php-bcmath \
+    php72-php-pecl-xdebug \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
     httpd mod_dav_svn logrotate sha1collisiondetector \
     mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' 'perl(Redis)' \
