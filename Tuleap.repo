@@ -1,5 +1,6 @@
 [TuleapC7]
 name=TuleapC7
-baseurl=https://ci.tuleap.org/yum/tuleap/rhel/7/dev/$basearch
+baseurl=https://ci.tuleap.net/yum/tuleap/rhel/7/dev/$basearch
 enabled=0
-gpgcheck=0
+gpgcheck=1
+gpgkey=https://ci.tuleap.net/yum/tuleap/gpg.key
