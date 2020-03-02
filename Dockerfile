@@ -20,6 +20,8 @@ RUN yum install -y epel-release centos-release-scl vim && \
     php73-php-ldap \
     php73-php-intl \
     php73-php-bcmath \
+    php73-php-sodium \
+    php73-php-pecl-zip \
     php73-php-pecl-xdebug \
     php73-php-pecl-redis \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
