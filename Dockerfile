@@ -24,6 +24,23 @@ RUN yum install -y epel-release centos-release-scl vim && \
     php73-php-pecl-zip \
     php73-php-pecl-redis5 \
     php73-php-pecl-mailparse \
+    php74-php-gd \
+    php74-php-soap \
+    php74-php-mysqlnd \
+    php74-php-xml \
+    php74-php-mbstring \
+    php74-php-opcache \
+    php74-php-fpm \
+    php74-php-cli \
+    php74-php-pdo \
+    php74-php-xml \
+    php74-php-mbstring \
+    php74-php-process \
+    php74-php-ldap \
+    php74-php-sodium \
+    php74-php-pecl-zip \
+    php74-php-pecl-redis5 \
+    php74-php-pecl-mailparse \
     viewvc MySQL-python python-ldap viewvc-theme-tuleap \
     httpd mod_dav_svn logrotate sha1collisiondetector \
     mod_perl perl-DBI perl-LDAP perl-DBD-MySQL 'perl(Crypt::Eksblowfish::Bcrypt)' 'perl(Redis)' \
